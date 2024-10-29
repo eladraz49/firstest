@@ -24,12 +24,7 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
 
-        Button btn = findViewById(R.id.btn);
-        TextView textView = findViewById(R.id.textView);
-        btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                textView.setText("elad");
+
             }
         });
     }
