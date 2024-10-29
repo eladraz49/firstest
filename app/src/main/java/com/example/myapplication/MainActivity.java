@@ -1,8 +1,10 @@
 package com.example.myapplication;
 
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
@@ -23,6 +25,10 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+Button btn = findViewById(R.id.btn);
+TextView textView = findViewById(R.id.textView);
+EditText editText = findViewById(R.id.editText);
+        SharedPreferences sharedPreferences = getSharedPreferences("mypreference", MODE_PRIVATE);
 
 
             }
